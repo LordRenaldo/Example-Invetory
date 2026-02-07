@@ -9,6 +9,8 @@ public class Inventory
         ItemList = new List<ItemData> ();
 
         AddItem (new ItemData { itemType = ItemData.Itemtype.HealthPotion, Amount = 1 });
+        AddItem (new ItemData { itemType = ItemData.Itemtype.ManaPotion, Amount = 1 });
+        AddItem (new ItemData { itemType = ItemData.Itemtype.Sword, Amount = 1 });
 
         Debug.Log (ItemList.Count);
     }

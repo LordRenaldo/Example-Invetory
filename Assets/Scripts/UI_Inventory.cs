@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class UI_Inventory : MonoBehaviour
 {
@@ -17,8 +18,9 @@ public class UI_Inventory : MonoBehaviour
             foreach (ItemData item in inventory.GetItemList ())
             {
                 var newUitem = Instantiate (itemsTemplate, itemsContainer).GetComponent<RectTransform> ();
-
                 newUitem.name = item.itemType.ToString ();
+                var image = newUitem.Find ("Border/Image").GetComponent<Image> ();
+                image.sprite = item.GetSprite ();
             }
         }
     }

@@ -8124,6 +8124,56 @@ Transform:
   - {fileID: 1190961992}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &750953288
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 750953290}
+  - component: {fileID: 750953289}
+  m_Layer: 0
+  m_Name: ItemsAssents
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &750953289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 750953288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e8be8ddb950c184489027297219bc58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ItemsAssets
+  healthPotionSprite: {fileID: 21300000, guid: 705d43ae51df44d48a1b9558bf7416b0, type: 3}
+  manaPotionSprite: {fileID: 21300000, guid: c595219705fe04b4f9d610b2f7f29e5b, type: 3}
+  swordSprite: {fileID: 21300000, guid: 6730f1f48f52d1648ae5b4f0ca0dd55b, type: 3}
+  stoneSprite: {fileID: 21300000, guid: e662136197f7bfc4081888037c81491f, type: 3}
+  ringSprite: {fileID: 21300000, guid: 721a15cda207dcb4491a210449269faf, type: 3}
+  coinSprite: {fileID: 21300000, guid: cac2ab8d1dc080440af0adeed9fd5bb1, type: 3}
+--- !u!4 &750953290
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 750953288}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.66541, y: 0.98906, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &751877769
 GameObject:
   m_ObjectHideFlags: 0
@@ -10316,3 +10366,4 @@ SceneRoots:
   - {fileID: 745437853}
   - {fileID: 566600911}
   - {fileID: 1607260494}
+  - {fileID: 750953290}
