@@ -23,5 +23,8 @@ public class Inventory
         if (ItemList.Contains (item)) ItemList.Remove (item);
     }
 
-
+    public List<ItemData> GetItemList ()
+    {
+        return ItemList;
+    }
 }
