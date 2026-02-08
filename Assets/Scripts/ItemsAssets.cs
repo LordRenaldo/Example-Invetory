@@ -10,6 +10,7 @@ public class ItemsAssets : MonoBehaviour
     public Sprite ringSprite;
     public Sprite coinSprite;
 
+    public Transform itemWorldprefab;
     private void Awake ()
     {
         Instance = this;
