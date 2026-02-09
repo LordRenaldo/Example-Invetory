@@ -257,4 +257,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 320099f2e72c69744908401bc8ece200, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ItemsWorld
-  spriteRenderer: {fileID: 0}

@@ -21,4 +21,12 @@ public class ItemsWorld : MonoBehaviour
     {
         spriteRenderer = GetComponent<SpriteRenderer> ();
     }
+    public ItemData GetItem ()
+    {
+        return itemData;
+    }
+    public void DestroySelf ()
+    {
+        Destroy (gameObject);
+    }
 }
