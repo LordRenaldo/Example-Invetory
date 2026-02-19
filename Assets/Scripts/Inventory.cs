@@ -1,8 +1,10 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Inventory
 {
+    public event EventHandler OnItemListChanged;
     public List<ItemData> ItemList;
     public Inventory ()
     {
@@ -18,6 +20,7 @@ public class Inventory
     public void AddItem ( ItemData item )
     {
         if (item != null) ItemList.Add (item);
+        OnItemListChanged?.Invoke (this, EventArgs.Empty);
     }
 
     public void RemoveItem ( ItemData item )
