@@ -23,4 +23,20 @@ public class ItemData
         }
 
     }
+    public bool IsStackable ()
+    {
+        switch (itemType)
+        {
+            default:
+            case Itemtype.ManaPotion:
+            case Itemtype.HealthPotion:
+            case Itemtype.Stone:
+            case Itemtype.Coin:
+            return true;
+            case Itemtype.Sword:
+            case Itemtype.Ring:
+            return false;
+
+        }
+    }
 }
