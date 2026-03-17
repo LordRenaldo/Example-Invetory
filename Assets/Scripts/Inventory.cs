@@ -9,11 +9,6 @@ public class Inventory
     public Inventory ()
     {
         ItemList = new List<ItemData> ();
-
-        AddItem (new ItemData { itemType = ItemData.Itemtype.HealthPotion, Amount = 1 });
-        AddItem (new ItemData { itemType = ItemData.Itemtype.ManaPotion, Amount = 1 });
-        AddItem (new ItemData { itemType = ItemData.Itemtype.Sword, Amount = 1 });
-
         Debug.Log (ItemList.Count);
     }
 
@@ -21,16 +16,18 @@ public class Inventory
     {
         if (item.IsStackable ())
         {
-            bool itemALreadyInInvetory = false;
+            bool itemAlreadyInInventory = false;
             foreach (ItemData inventoryItem in ItemList)
             {
                 if (inventoryItem.itemType == item.itemType)
                 {
                     inventoryItem.Amount += item.Amount;
-                    itemALreadyInInvetory = true;
+                    itemAlreadyInInventory = true;
+                    break;
                 }
             }
-            if (itemALreadyInInvetory)
+
+            if (!itemAlreadyInInventory)
             {
                 ItemList.Add (item);
             }
@@ -39,6 +36,7 @@ public class Inventory
         {
             ItemList.Add (item);
         }
+
         if (item != null)
             OnItemListChanged?.Invoke (this, EventArgs.Empty);
     }
